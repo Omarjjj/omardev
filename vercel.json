@@ -1,5 +1,10 @@
 {
   "version": 2,
+  "functions": {
+    "api/chat.js": {
+      "includeFiles": "data/embeddings.json"
+    }
+  },
   "builds": [
     {
       "src": "package.json",

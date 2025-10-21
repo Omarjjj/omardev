@@ -1,21 +1,14 @@
 import OpenAI from 'openai';
-import { readFileSync } from 'fs';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
-
-// Get current directory in ES modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-// Load embeddings from JSON file
-const embeddingsData = JSON.parse(
-  readFileSync(join(__dirname, '..', 'data', 'embeddings.json'), 'utf-8')
-);
+import embeddingsData from './embeddings-loader.js';
 
 // Initialize OpenAI (uses OPENAI_API_KEY from environment)
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
+
+console.log('✅ Serverless function initialized');
+console.log('📊 Embeddings loaded:', embeddingsData?.length || 0, 'entries');
+console.log('🔑 API Key present:', !!process.env.OPENAI_API_KEY);
 
 // Cosine similarity function
 function cosineSimilarity(vecA, vecB) {
@@ -191,9 +184,15 @@ ${contextString}`,
     });
   } catch (error) {
     console.error('❌ Error in chat endpoint:', error);
+    console.error('Stack trace:', error.stack);
+    
+    // Return detailed error for debugging
     res.status(500).json({
       error: 'Failed to process chat message',
       details: error.message,
+      type: error.name,
+      // Include stack in development only
+      ...(process.env.NODE_ENV !== 'production' && { stack: error.stack })
     });
   }
 }

@@ -95,7 +95,9 @@ const ChatWidget = () => {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to get response');
+        const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
+        console.error('API Error Response:', errorData);
+        throw new Error(errorData.details || errorData.error || 'Failed to get response');
       }
 
       const data = await response.json();
@@ -110,13 +112,14 @@ const ChatWidget = () => {
 
       setMessages(prev => [...prev, aiMessage]);
     } catch (error) {
-      console.error('Error sending message:', error);
+      console.error('❌ Chat Error:', error);
+      console.error('Error details:', error.message);
       
-      // Add error message
+      // Add error message with details
       const errorMessage = {
         id: Date.now() + 1,
         role: 'assistant',
-        content: "I'm having trouble connecting right now. Please make sure the backend server is running (npm run server).",
+        content: `⚠️ **Connection Issue**\n\nI'm having trouble connecting to the AI service right now.\n\n**Error:** ${error.message}\n\nPlease try again in a moment or check the browser console for more details.`,
         timestamp: new Date(),
         isError: true,
       };
