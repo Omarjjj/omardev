@@ -1,0 +1,112 @@
+[
+    {
+      "id": "bio-01",
+      "topic": "bio",
+      "text": "Omar Nader Hussein Jaber is a 4th-year Computer Science student at Arab American University (AAUP) in Palestine. He is recognized as one of the university’s most successful students for his innovation in AI and software development. He was featured officially by the university as a success story while still a student, being the only non-graduate among alumni recognized for outstanding achievements."
+    },
+    {
+      "id": "bio-02",
+      "topic": "bio",
+      "text": "Omar combines strong technical ability, design sense, and entrepreneurship. He aims to become a leading AI and full-stack developer in Palestine and globally. He’s passionate about turning academic projects into real products that impact education, productivity, and local businesses."
+    },
+    {
+      "id": "recognition-01",
+      "topic": "recognition",
+      "text": "Omar was selected personally by the Head of AI in Palestine to represent AAUP at a national AI event alongside the university president. He was praised as brilliant and unlike anyone else for his AI achievements."
+    },
+    {
+      "id": "recognition-02",
+      "topic": "recognition",
+      "text": "Omar’s work was officially recognized by AAUP’s leadership and featured on the university’s website, app, and social media. His multi-university AI assistant project was praised as company-level work."
+    },
+    {
+      "id": "project-01",
+      "topic": "project",
+      "text": "The Multi-University AI Assistant, also known as 'جامعتك', is Omar’s flagship project. It serves six Palestinian universities — AAUP, Birzeit, Al-Najah, Polytechnic, Al-Quds, and Bethlehem. The assistant answers university-specific questions like tuition, majors, and registration details. It supports bilingual chat (Arabic and English), persona-based responses, contextual memory, and a Tinder-style major selection interface. The system is built with React, TypeScript, Tailwind CSS, Framer Motion, GSAP, FastAPI, and Pinecone, and it uses OpenAI GPT models. It is deployed on Vercel (frontend) and Render (backend) and has been valued at $30,000. The university decided to fund it officially and make it available to over 40,000 students."
+    },
+    {
+      "id": "project-02",
+      "topic": "project",
+      "text": "Omar created the AAUP University AI Chatbot as the original version of his multi-university project. It was first built in Android Studio using Kotlin, later rebuilt as a React web app with improved design and bilingual support. The chatbot answers questions about AAUP, including registration, tuition, and courses."
+    },
+    {
+      "id": "project-03",
+      "topic": "project",
+      "text": "PulseID is an advanced fingerprint-based gym access and logging system built by Omar as a Software Engineering project. It uses ESP32 for biometric enrollment, MQTT for communication, FastAPI for backend logic, and a React dashboard for real-time logging, locker control, and updates. PulseID implements Agile methodology and full-stack IoT architecture, integrating security and usability in a professional design."
+    },
+    {
+      "id": "project-04",
+      "topic": "project",
+      "text": "Omar built an AI Driver Fatigue and Drowsiness Detection system using machine learning and computer vision. It employs three trained models on over 300,000 samples to detect fatigue, yawning, and eye closure with high accuracy. The web app was designed with Framer Motion, Tailwind CSS, and Chart.js for visual data representation."
+    },
+    {
+      "id": "project-05",
+      "topic": "project",
+      "text": "Omar developed a Smart Productivity Dashboard called Omnify. The app includes task management, reminders, and note-taking features, all connected to a real-time AI chatbot that interacts contextually with the user’s data. Built with React Native and Electron, it integrates animations and a polished UI."
+    },
+    {
+      "id": "project-06",
+      "topic": "project",
+      "text": "Omar designed a Study Café Management System for a local café owner to replace manual notebooks. The system automates check-ins, tracks time, calculates pricing, handles product orders, and generates daily and monthly income reports. It also integrates an AI chatbot for fast queries. Omar offered three versions: local (2000 NIS), cloud-hosted (3500 NIS), and AI-integrated (5000 NIS)."
+    },
+    {
+      "id": "project-07",
+      "topic": "project",
+      "text": "Omar created an AI Tourist Guide assistant during a hackathon. It uses persona-based interaction and location-aware suggestions to help users discover attractions, events, and routes dynamically. The project was built under tight deadlines and demonstrated Omar’s rapid prototyping skills."
+    },
+    {
+      "id": "project-08",
+      "topic": "project",
+      "text": "Omar developed a personal portfolio AI chatbot that answers questions about his skills, achievements, and projects. It uses a small in-memory RAG system with pre-embedded vectors to retrieve relevant information and provide contextual, human-like answers."
+    },
+    {
+      "id": "internship-01",
+      "topic": "internship",
+      "text": "Omar completed an internship at ASAL Technologies, one of the leading tech companies in Palestine. He worked with Node.js and JavaScript fundamentals, building JWT-secured REST APIs with Express.js, MongoDB, and Mongoose. He implemented CRUD operations, middleware, and aggregation endpoints, and learned secure coding, .env management, and Postman debugging. The main disadvantage was the long commute time to the office, but Omar valued the experience of working in a real tech company environment."
+    },
+    {
+      "id": "early-projects-01",
+      "topic": "project",
+      "text": "Before university, Omar ran a successful YouTube channel focused on game development with Unity and C#. His channel reached over 18,000 subscribers and 170,000 views with only six videos. He released a game that surpassed 10,000 downloads, showing his early talent in software and creativity."
+    },
+    {
+      "id": "skills-01",
+      "topic": "skills",
+      "text": "Omar’s technical skills include C++, Java, Python, JavaScript, TypeScript, SQL, C#, and Kotlin. He is highly proficient in React, Tailwind CSS, GSAP, Framer Motion, and FastAPI. He is also experienced in Node.js, Express.js, MongoDB, and authentication systems. In AI and machine learning, he works with scikit-learn, Pinecone, and OpenAI’s API. He is deeply knowledgeable in full-stack web development, mobile development, and AI integration."
+    },
+    {
+      "id": "skills-02",
+      "topic": "skills",
+      "text": "Omar is an expert in Photoshop and has been using it since 2018. He creates professional posters, cartoonish artwork, logos, T-shirt designs, and UI mockups. He also works with Adobe After Effects and Vegas Pro for video editing and animation. His UI/UX design style emphasizes modern aesthetics, motion, and glassmorphism."
+    },
+    {
+      "id": "projects-summary",
+      "topic": "summary",
+      "text": "Omar’s projects cover AI chatbots, full-stack systems, IoT devices, and mobile apps. His work blends advanced backend logic with visually stunning front-end design. He consistently focuses on practical usability, real-world scalability, and strong product identity."
+    },
+    {
+      "id": "values-01",
+      "topic": "values",
+      "text": "Omar’s approach to technology combines design, performance, and empathy. He builds systems that solve real problems, from student support to local business automation. His personality blends creativity, analytical thinking, and resilience, shaped by personal challenges and hard work."
+    },
+    {
+      "id": "future-01",
+      "topic": "vision",
+      "text": "Omar aims to become a full-stack and AI engineer capable of leading large-scale projects. He plans to continue improving his portfolio, integrating his AI assistant as a centerpiece feature, and exploring opportunities in both local and global tech ecosystems. He is focused on innovation, entrepreneurship, and empowering others through technology."
+    },
+    {
+      "id": "family-01",
+      "topic": "family",
+      "text": "Omar's father is Nader Jaber. He has been an incredible source of support and encouragement throughout Omar's journey. Nader has always believed in Omar's potential and provided unwavering support for his education and projects. Omar is deeply grateful for his father's continuous guidance, motivation, and belief in his abilities."
+    },
+    {
+      "id": "family-02",
+      "topic": "family",
+      "text": "Nader Jaber, Omar's father, has played a crucial role in shaping Omar's success. He has supported Omar emotionally, financially, and motivationally through his academic journey and project development. Nader's encouragement has been instrumental in helping Omar pursue ambitious projects and overcome challenges. Omar considers his father's support as one of the key pillars behind his achievements."
+    },
+    {
+      "id": "family-03",
+      "topic": "family",
+      "text": "When people ask about Omar's father, he proudly shares that his father's name is Nader Jaber. Nader has been more than just a father – he's been a mentor, supporter, and biggest cheerleader. His constant belief in Omar's abilities and his support for Omar's educational and professional journey have been invaluable. Omar often credits his father's support as a major factor in his ability to take on challenging projects and achieve recognition."
+    }
+  ]
