@@ -1,5 +1,20 @@
 import OpenAI from 'openai';
-import embeddingsData from './embeddings-loader.js';
+import { readFileSync } from 'fs';
+import { join } from 'path';
+
+// Load embeddings - Vercel bundles this automatically
+let embeddingsData;
+try {
+  // In Vercel, files are relative to the serverless function
+  const embeddingsPath = join(process.cwd(), 'data', 'embeddings.json');
+  embeddingsData = JSON.parse(readFileSync(embeddingsPath, 'utf-8'));
+  console.log('✅ Embeddings loaded:', embeddingsData?.length || 0, 'entries');
+} catch (error) {
+  console.error('❌ Failed to load embeddings:', error.message);
+  console.error('CWD:', process.cwd());
+  // Fallback: empty array (will still work but with less context)
+  embeddingsData = [];
+}
 
 // Initialize OpenAI (uses OPENAI_API_KEY from environment)
 const openai = new OpenAI({
@@ -7,7 +22,6 @@ const openai = new OpenAI({
 });
 
 console.log('✅ Serverless function initialized');
-console.log('📊 Embeddings loaded:', embeddingsData?.length || 0, 'entries');
 console.log('🔑 API Key present:', !!process.env.OPENAI_API_KEY);
 
 // Cosine similarity function
